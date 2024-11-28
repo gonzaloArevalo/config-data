@@ -20,20 +20,20 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/user/**
+            - Path=/api/v1/user/**
         - id: request-service
           uri: lb://request-service
           predicates:
-            - Path=/request/**
+            - Path=/api/v1/request/**
         - id: simulation-service
           uri: lb://simulation-service
           predicates:
-            - Path=/simulation/**
+            - Path=/api/v1/simulation/**
         - id: state-service
           uri: lb://state-service
           predicates:
-            - Path=/state/**
+            - Path=/api/v1/state/**
         - id: evaluation-service
           uri: lb://evaluation-service
           predicates:
-            - Path=/evaluation/**
+            - Path=/api/v1/evaluation/**
