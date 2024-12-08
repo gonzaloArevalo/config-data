@@ -7,4 +7,6 @@ eureka:
     service-url:
       defaultZone: http://eureka-service:8761/eureka
   instance:
+    hostname: simulation-service 
+    prefer-ip-address: false
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
